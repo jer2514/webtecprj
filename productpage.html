@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="productstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+   <div class="main-nav d-flex align-items-center justify-content-between px-4">
+    
+  <div class="logo">
+    <img src="vhs/filmtapes.png" alt="Logo" class="nav-logo">
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav justify-content-end" id="navMenu">
+    <li class="nav-item"><a class="nav-link"  href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Product</a></li>
+    <li class="nav-item"><a class="nav-link" href="cartpage.html">Cart</a></li>
+    <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="aboutpage.html">About Us</a></li>
+  </ul>
+</div>
+
+
+<section class="py-5 custom-bg">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Collect VHS Tapes</h2>
+
+<div class="text-center mb-5">
+  <label for="directorFilter" class="me-2 fw-semibold">Filter by Director:</label>
+  <select id="directorFilter" class="form-select d-inline-block w-auto">
+    <option value="all">All Directors</option>
+    <option value="Quentin Tarantino">Quentin Tarantino</option>
+    <option value="Martin Scorsese">Martin Scorsese</option>
+    <option value="Park Chan-wook">Park Chan-wook</option>
+    <option value="David Lynch">David Lynch</option>
+  </select>
+</div>
+    <div class="row g-4">
+
+      <!-- Product Card -->
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Pulp Fiction VHS Tape"
+             data-price="$250"
+             data-genre="Crime, Drama"
+             data-director="Quentin Tarantino"
+             data-description="Collector’s edition VHS tape of Quentin Tarantino’s classic film, featuring original artwork and premium casing."
+             data-image="vhs/tapes/pulpfiction.png">
+          <div class="product-image">
+            <img src="vhs/poster/pulp.jpg" class="bg-img" alt="Pulp Fiction Poster">
+            <img src="vhs/tapes/pulpfiction.png" class="overlay-img" alt="Pulp Fiction Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Pulp Fiction VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$250</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Inglourious Basterds VHS Tape"
+             data-price="$220"           
+             data-genre="War, Suspense"
+             data-director="Quentin Tarantino"
+             data-description="Collector’s edition VHS tape of Quentin Tarantino’s bold World War II masterpiece, blending revenge, resistance, and cinematic brilliance."
+             data-image="vhs/tapes/ingloriousbasterds.png">
+          <div class="product-image">
+            <img src="vhs/poster/ingloriousbasterds.jpg" class="bg-img" alt="Inglourious Basterds Poster">
+            <img src="vhs/tapes/ingloriousbasterds.png" class="overlay-img" alt="Inglourious Basterds Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Inglourious Basterds VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$220</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Kill Bill Vol. 1 VHS Tape"
+             data-price="$230"
+             data-genre="Action, Thriller"
+             data-director="Quentin Tarantino"
+             data-description="Collector’s edition VHS tape of Quentin Tarantino’s iconic revenge epic, following The Bride on her relentless journey for vengeance."
+             data-image="vhs/tapes/killbill.png">
+          <div class="product-image">
+            <img src="vhs/poster/killbill.jpg" class="bg-img" alt="Kill Bill Poster">
+            <img src="vhs/tapes/killbill.png" class="overlay-img" alt="Kill Bill Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Kill Bill Vol. 1 VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$230</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Reservoir Dogs VHS Tape"
+             data-price="$200"
+             data-oldprice="$230"
+             data-genre="Crime, Thriller"
+             data-director="Quentin Tarantino"
+             data-description="Collector’s edition VHS tape of Quentin Tarantino’s groundbreaking debut film — a gritty, dialogue-driven crime thriller that redefined independent cinema."
+             data-image="vhs/tapes/reservoirdogs.png">
+          <div class="product-image">
+            <img src="vhs/poster/reservoirdogs.jpg" class="bg-img" alt="Reservoir Dogs Poster">
+            <img src="vhs/tapes/reservoirdogs.png" class="overlay-img" alt="Reservoir Dogs Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Reservoir Dogs VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$200</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Jackie Brown VHS Tape"
+             data-price="$190"
+             data-genre="Crime, Drama"
+             data-director="Quentin Tarantino"
+             data-description="Collector’s edition VHS tape of Quentin Tarantino’s stylish crime drama, adapted from Elmore Leonard’s novel Rum Punch."
+             data-image="vhs/tapes/jackiebrown.png">
+          <div class="product-image">
+            <img src="vhs/poster/jackiebrown.jpg" class="bg-img" alt="Jackie Brown Poster">
+            <img src="vhs/tapes/jackiebrown.png" class="overlay-img-jackiebrown" alt="Jackie Brown Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Jackie Brown VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$190</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Raging BullVHS Tape"
+             data-price="$230"
+             data-genre="Drama, Sports"
+             data-director="Martin Scorsese"
+             data-description="Collector’s edition VHS tape of Martin Scorsese’s powerful biographical drama starring Robert De Niro in his Oscar-winning performance as boxer Jake LaMotta."
+             data-image="vhs/tapes/ragingbull.png">
+          <div class="product-image">
+            <img src="vhs/poster/ragingbull.jpg" class="bg-img" alt="Raging Bull Poster">
+            <img src="vhs/tapes/ragingbull.png" class="overlay-img" alt="Raging Bull Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Raging Bull VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$230</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Cape Fear VHS Tape"
+             data-price="$180"
+             data-genre="Thriller, Crime, Drama"
+             data-director="Martin Scorsese"
+             data-description="Collector’s edition VHS tape of Martin Scorsese’s psychological thriller starring Robert De Niro, Nick Nolte, and Jessica Lange."
+             data-image="vhs/tapes/capefear.png">
+          <div class="product-image">
+            <img src="vhs/poster/capefear.jpg" class="bg-img" alt="Cape Fear Poster">
+            <img src="vhs/tapes/capefear.png" class="overlay-img" alt="Cape Fear Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Cape Fear VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$180</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Casino VHS Tape"
+             data-price="$210"
+             data-oldprice="$230"
+             data-genre="Crime, Drama"
+             data-director="Martin Scorsese"
+             data-description="Collector’s edition VHS tape of Martin Scorsese’s electrifying crime epic starring Robert De Niro, Sharon Stone, and Joe Pesci."
+             data-image="vhs/tapes/casino.png">
+          <div class="product-image">
+            <img src="vhs/poster/casino.jpg" class="bg-img" alt="Casino Poster">
+            <img src="vhs/tapes/casino.png" class="overlay-img" alt="Casino Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Casino VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$210</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="GoodFellas VHS Tape"
+             data-price="$220"
+             data-genre="Crime, Drama"
+             data-director="Martin Scorsese"
+             data-description="Collector’s edition VHS tape of Martin Scorsese’s legendary gangster masterpiece starring Ray Liotta, Robert De Niro, and Joe Pesci."
+             data-image="vhs/tapes/goodfellas.png">
+          <div class="product-image">
+            <img src="vhs/poster/goodfellas.jpg" class="bg-img" alt="GoodFellas Poster">
+            <img src="vhs/tapes/goodfellas.png" class="overlay-img" alt="GoodFellas Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">GoodFellas VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$220</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Taxi Driver VHS Tape"
+             data-price="$250"
+             data-genre="Drama, Thriller"
+             data-director="Martin Scorsese"
+             data-description="Collector’s edition VHS tape of Martin Scorsese’s gritty psychological drama starring Robert De Niro in his defining role as Travis Bickle."
+             data-image="vhs/tapes/taxidriver.png">
+          <div class="product-image">
+            <img src="vhs/poster/taxidriver.jpg" class="bg-img" alt="Taxi Driver Poster">
+            <img src="vhs/tapes/taxidriver.png" class="overlay-img" alt="Taxi Driver Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Taxi Driver VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$250</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Oldboy VHS Tape"
+             data-price="$230"
+             data-genre="Mystery, Action, Thriller"
+             data-director="Park Chan-wook"
+             data-description="Collector’s edition VHS tape of Park Chan-wook’s masterful neo-noir thriller, a cornerstone of South Korean cinema."
+             data-image="vhs/tapes/oldboy.png">
+          <div class="product-image">
+            <img src="vhs/poster/oldboy.jpg" class="bg-img" alt="Oldboy Poster">
+            <img src="vhs/tapes/oldboy.png" class="overlay-img" alt="Oldboy Bill Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Oldboy VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$230</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Lady Vengeance VHS Tape"
+             data-price="$205"
+             data-genre="Crime, Drama, Thriller"
+             data-director="Park Chan-wook"
+             data-description="Collector’s edition VHS tape of Park Chan-wook’s visually stunning and emotionally charged finale to The Vengeance Trilogy."
+             data-image="vhs/tapes/ladyvengeance.png">
+          <div class="product-image">
+            <img src="vhs/poster/ladyvengeance.jpg" class="bg-img" alt="Lady Vengeance Poster">
+            <img src="vhs/tapes/ladyvengeance.png" class="overlay-img" alt="Lady Vengeance Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Lady Vengeance VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$205</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Sympathy for Mr. Vengeance VHS Tape"
+             data-price="$200"
+             data-genre="Crime, Drama, Thriller"
+             data-director="Park Chan-wook"
+             data-description="Collector’s edition VHS tape of Park Chan-wook’s raw and unsettling first installment in The Vengeance Trilogy."
+             data-image="vhs/tapes/mrvengeance.png">
+          <div class="product-image">
+            <img src="vhs/poster/mrvengeance.jpg" class="bg-img" alt="Sympathy for Mr. Vengeance Poster">
+            <img src="vhs/tapes/mrvengeance.png" class="overlay-img-mrv" alt="Sympathy for Mr. Vengeance Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Sympathy for Mr. Vengeance VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$200</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Three... Extremes VHS Tape"
+             data-price="$180"
+             data-oldprice="$200"
+             data-genre="Horror, Thriller"
+             data-director="Park Chan-wook"
+             data-description="Collector’s edition VHS tape of the acclaimed Asian horror anthology featuring chilling works by Park Chan-wook, Takashi Miike, and Fruit Chan."
+             data-image="vhs/tapes/threeextreme.png">
+          <div class="product-image">
+            <img src="vhs/poster/threeextreme.jpg" class="bg-img" alt="Three Extreme Poster">
+            <img src="vhs/tapes/threeextreme.png" class="overlay-img" alt="Three Extreme Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Three... Extremes VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$180</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Joint Security Area VHS Tape"
+             data-price="$170"
+             data-oldprice="$190"
+             data-genre="Drama, Mystery, Thriller"
+             data-director="Park Chan-wook"
+             data-description="Collector’s edition VHS tape of Park Chan-wook’s gripping military mystery that delves into the fragile tensions along the Korean DMZ."
+             data-image="vhs/tapes/jointsecurityarea.png">
+          <div class="product-image">
+            <img src="vhs/poster/jointsecurityarea.jpg" class="bg-img" alt="Joint Security Area Poster">
+            <img src="vhs/tapes/jointsecurityarea.png" class="overlay-img" alt="Joint Security Area Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Joint Security Area VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$170</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Blue Velvet VHS Tape"
+             data-price="$205"
+             data-genre="Mystery, Drama, Thriller"
+             data-director="David Lynch"
+             data-description="Collector’s edition VHS tape of David Lynch’s haunting neo-noir classic starring Kyle MacLachlan, Isabella Rossellini, and Dennis Hopper."
+             data-image="vhs/tapes/bluevelvet.png">
+          <div class="product-image">
+            <img src="vhs/poster/bluevelvet.jpg" class="bg-img" alt="Blue Velvet Poster">
+            <img src="vhs/tapes/bluevelvet.png" class="overlay-img" alt="Blue Velvet Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Blue Velvet VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$205</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+             <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Eraserhead VHS Tape"
+             data-price="$170"
+             data-genre="Horror, Experimental, Drama"
+             data-director="David Lynch"
+             data-description="Collector’s edition VHS tape of David Lynch’s surreal debut feature — a nightmarish journey through industrial decay, isolation, and the subconscious."
+             data-image="vhs/tapes/eraserhead.png">
+          <div class="product-image">
+            <img src="vhs/poster/eraserhead.jpg" class="bg-img" alt="Eraserhead Poster">
+            <img src="vhs/tapes/eraserhead.png" class="overlay-img" alt="Eraserhead Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Eraserhead VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$170</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+             <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Lost Highway VHS Tape"
+             data-price="$210"
+             data-genre="Mystery, Psychological, Thriller"
+             data-director="David Lynch"
+             data-description="Collector’s edition VHS tape of David Lynch’s hypnotic neo-noir thriller starring Bill Pullman, Patricia Arquette, and Balthazar Getty."
+             data-image="vhs/tapes/losthighway.png">
+          <div class="product-image">
+            <img src="vhs/poster/losthighway.jpg" class="bg-img" alt="Lost Highway Poster">
+            <img src="vhs/tapes/losthighway.png" class="overlay-img" alt="Lost Highway Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Lost Highway VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$210</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+             <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Mulholland Drive VHS Tape"
+             data-price="$185"
+             data-oldprice="$200"
+             data-genre="Mystery, Drama, Crime"
+             data-director="David Lynch"
+             data-description="Collector’s edition VHS tape of David Lynch’s mesmerizing neo-noir masterpiece starring Naomi Watts and Laura Harring."
+             data-image="vhs/tapes/mulhollanddrive.png">
+          <div class="product-image">
+            <img src="vhs/poster/mulhollanddrive.jpg" class="bg-img" alt="Mulholland Drive Poster">
+            <img src="vhs/tapes/mulhollanddrive.png" class="overlay-img" alt="Mulholland Drive Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Mulholland Drive VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$185</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Wild at Heart VHS Tape"
+             data-price="$195"
+             data-genre="Crime, Drama, Romance"
+             data-director="David Lynch"
+             data-description="Collector’s edition VHS tape of David Lynch’s fiery road romance starring Nicolas Cage and Laura Dern."
+             data-image="vhs/tapes/wildatheart.png">
+          <div class="product-image">
+            <img src="vhs/poster/wildatheart.jpg" class="bg-img" alt="Wild at Heart Poster">
+            <img src="vhs/tapes/wildatheart.png" class="overlay-img" alt="Wild at Heart Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Wild at Heart VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$195</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Pearl VHS Tape"
+             data-price="$210"
+             data-genre="Horror, Drama, Thriller"
+             data-director="Ti West"
+             data-description="Collector’s edition VHS tape of Ti West’s acclaimed psychological horror prequel starring Mia Goth in a mesmerizing, career-defining performance."
+             data-image="vhs/tapes/pearl.png">
+          <div class="product-image">
+            <img src="vhs/poster/pearl.jpg" class="bg-img" alt="Pearl Poster">
+            <img src="vhs/tapes/pearl.png" class="overlay-img" alt="Pearl Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Pearl VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$210</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Longlegs VHS Tape"
+             data-price="$205"
+             data-genre="Horror, Mystery, Thriller"
+             data-director="Osgood Perkins"
+             data-description="Collector’s edition VHS tape of Osgood Perkins’ chilling 2024 horror-thriller starring Maika Monroe and Nicolas Cage."
+             data-image="vhs/tapes/longlegs.png">
+          <div class="product-image">
+            <img src="vhs/poster/longlegs.jpg" class="bg-img" alt="Longlegs Poster">
+            <img src="vhs/tapes/longlegs.png" class="overlay-img" alt="Longlegs Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Longlegs VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$205</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+          <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Panic Room VHS Tape"
+             data-price="$225"
+             data-genre="Crime, Drama, Thriller"
+             data-director="David Fincher"
+             data-description="Collector’s edition VHS tape of David Fincher’s tense home-invasion thriller starring Jodie Foster, Kristen Stewart, and Forest Whitaker."
+             data-image="vhs/tapes/panicroom.png">
+          <div class="product-image">
+            <img src="vhs/poster/panicroom.jpg" class="bg-img" alt="Panic Room Poster">
+            <img src="vhs/tapes/panicroom.png" class="overlay-img" alt="Panic Room Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Panic Room VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$225</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+          <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="The Usual Suspects VHS Tape"
+             data-price="$215"
+             data-genre="Crime, Mystery, Thriller"
+             data-director="Bryan Singer"
+             data-description="Collector’s edition VHS tape of Bryan Singer’s iconic crime mystery starring Kevin Spacey, Gabriel Byrne, and Benicio del Toro."
+             data-image="vhs/tapes/usualsuspects.png">
+          <div class="product-image">
+            <img src="vhs/poster/usualsuspects.jpg" class="bg-img" alt="The Usual Suspects Poster">
+            <img src="vhs/tapes/usualsuspects.png" class="overlay-img" alt="The Usual Suspects Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">The Usual Suspects VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$215</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+          <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="card h-100 border-0 shadow-sm product-card"
+             data-title="Snatch VHS Tape"
+             data-price="$180"
+             data-genre="Crime, Comedy, Action"
+             data-director="Guy Ritchie"
+             data-description="Collector’s edition VHS tape of Guy Ritchie’s fast-paced crime comedy starring Jason Statham, Brad Pitt, and Benicio del Toro."
+             data-image="vhs/tapes/snatch.png">
+          <div class="product-image">
+            <img src="vhs/poster/snatch.jpg" class="bg-img" alt="Snatch Poster">
+            <img src="vhs/tapes/snatch.png" class="overlay-img" alt="Snatch Tape">
+          </div>
+          <div class="card-body text-center">
+            <h6 class="card-title fw-semibold">Snatch VHS Tape</h6>
+            <p class="text-muted mb-1"><strong>$180</strong></p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex gap-2">
+            <button class="btn btn-outline-dark w-50 view-btn">
+              <i class="fa-solid fa-eye me-1"></i> View
+            </button>
+            <button class="btn btn-primary w-50">
+              <i class="fa-solid fa-cart-shopping me-1"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<!-- SINGLE MODAL -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-body p-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img id="modalProductImage" src="" class="img-fluid mb-3" alt="Product Image">
+          </div>
+          <div class="col-md-6">
+            <h4 class="fw-bold mb-3" id="modalProductTitle"></h4>
+            <p class="text-muted small mb-4" id="modalProductDescription"></p>
+            <p><strong>Price:</strong> 
+              <span class="text-decoration-line-through text-muted" id="modalProductOldPrice"></span> 
+              <span class="text-dark fs-5 fw-bold" id="modalProductPrice"></span>
+            </p>
+            <p><strong>Genre:</strong> <span id="modalProductGenre"></span></p>
+            <p><strong>Director:</strong> <span id="modalProductDirector"></span></p>
+            <div class="d-flex gap-2 mt-4">
+              <button class="btn btn-primary flex-fill">
+                <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+              </button>
+              <button class="btn btn-outline-secondary flex-fill" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-main d-flex align-items-start justify-content-start flex-wrap">
+    
+    <div class="logo">
+      <img src="vhs/filmtapes.png" class="footer-logo">
+    </div>
+
+    <div class="footer-locations d-flex flex-wrap">
+      <!-- Germany -->
+      <div class="footer-col">
+        <h6 class="footer-title">GERMANY</h6>
+        <p>
+          Hochmeisterkirche<br>
+          Westfälische Straße 96<br>
+          10709 Berlin<br>
+          Berlin, Germany
+        </p>
+      </div>
+
+      <!-- Netherlands -->
+      <div class="footer-col">
+        <h6 class="footer-title">NETHERLANDS</h6>
+        <p>
+          Cornelis Schuytstraat<br>
+          De Lairessestraat 730<br>
+          1071 PK Amsterdam<br>
+          North Holland, Netherlands
+        </p>
+      </div>
+
+      <!-- France -->
+      <div class="footer-col">
+        <h6 class="footer-title">FRANCE</h6>
+        <p>
+          Hôtel Negresco<br>
+          5 Promenade des Anglais<br>
+          06000 Nice<br>
+          Provence-Alpes-Côte d'Azur, France
+        </p>
+      </div>
+
+ <div class="footer-col">
+  <h6 class="footer-title">Follow Us</h6>
+  <p class="social-links">
+    <a href="#"><i class="fab fa-facebook"></i>: filmtapes</a><br>
+    <a href="#"><i class="fab fa-instagram"></i>: @filmtapes</a><br>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i>: @filmtapes</a><br>
+  </p>
+</div>
+
+    </div>
+  </div>
+   <!-- Divider and Copyright -->
+  <hr class="footer-line">
+  <div class="footer-bottom text-center">
+    <p>Copyright © 1994. Vinculado. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+<script src="homejs.js"></script>
+</body>
+</html>

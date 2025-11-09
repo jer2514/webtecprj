@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Pulp Fiction VHS Tape",
+    "price": 250,
+    "oldprice": null,
+    "genre": "Crime, Drama",
+    "director": "Quentin Tarantino",
+    "description": "Collector’s edition VHS tape of Quentin Tarantino’s classic film, featuring original artwork and premium casing.",
+    "image": "vhs/tapes/pulpfiction.png",
+    "poster": "vhs/poster/pulp.jpg"
+  },
+  {
+    "title": "Inglourious Basterds VHS Tape",
+    "price": 220,
+    "oldprice": null,
+    "genre": "War, Suspense",
+    "director": "Quentin Tarantino",
+    "description": "Collector’s edition VHS tape of Quentin Tarantino’s bold World War II masterpiece, blending revenge, resistance, and cinematic brilliance.",
+    "image": "vhs/tapes/ingloriousbasterds.png",
+    "poster": "vhs/poster/ingloriousbasterds.jpg"
+  },
+  {
+    "title": "Kill Bill Vol. 1 VHS Tape",
+    "price": 230,
+    "oldprice": null,
+    "genre": "Action, Thriller",
+    "director": "Quentin Tarantino",
+    "description": "Collector’s edition VHS tape of Quentin Tarantino’s iconic revenge epic, following The Bride on her relentless journey for vengeance.",
+    "image": "vhs/tapes/killbill.png",
+    "poster": "vhs/poster/killbill.jpg"
+  },
+  {
+    "title": "Reservoir Dogs VHS Tape",
+    "price": 200,
+    "oldprice": 230,
+    "genre": "Crime, Thriller",
+    "director": "Quentin Tarantino",
+    "description": "Collector’s edition VHS tape of Quentin Tarantino’s groundbreaking debut film — a gritty, dialogue-driven crime thriller that redefined independent cinema.",
+    "image": "vhs/tapes/reservoirdogs.png",
+    "poster": "vhs/poster/reservoirdogs.jpg"
+  },
+  {
+    "title": "Jackie Brown VHS Tape",
+    "price": 190,
+    "oldprice": null,
+    "genre": "Crime, Drama",
+    "director": "Quentin Tarantino",
+    "description": "Collector’s edition VHS tape of Quentin Tarantino’s stylish crime drama, adapted from Elmore Leonard’s novel Rum Punch.",
+    "image": "vhs/tapes/jackiebrown.png",
+    "poster": "vhs/poster/jackiebrown.jpg"
+  },
+  {
+    "title": "Raging Bull VHS Tape",
+    "price": 230,
+    "oldprice": null,
+    "genre": "Drama, Sports",
+    "director": "Martin Scorsese",
+    "description": "Collector’s edition VHS tape of Martin Scorsese’s powerful biographical drama starring Robert De Niro in his Oscar-winning performance as boxer Jake LaMotta.",
+    "image": "vhs/tapes/ragingbull.png",
+    "poster": "vhs/poster/ragingbull.jpg"
+  },
+  {
+    "title": "Cape Fear VHS Tape",
+    "price": 180,
+    "oldprice": null,
+    "genre": "Thriller, Crime, Drama",
+    "director": "Martin Scorsese",
+    "description": "Collector’s edition VHS tape of Martin Scorsese’s psychological thriller starring Robert De Niro, Nick Nolte, and Jessica Lange.",
+    "image": "vhs/tapes/capefear.png",
+    "poster": "vhs/poster/capefear.jpg"
+  },
+  {
+    "title": "Casino VHS Tape",
+    "price": 210,
+    "oldprice": 230,
+    "genre": "Crime, Drama",
+    "director": "Martin Scorsese",
+    "description": "Collector’s edition VHS tape of Martin Scorsese’s electrifying crime epic starring Robert De Niro, Sharon Stone, and Joe Pesci.",
+    "image": "vhs/tapes/casino.png",
+    "poster": "vhs/poster/casino.jpg"
+  },
+  {
+    "title": "GoodFellas VHS Tape",
+    "price": 220,
+    "oldprice": null,
+    "genre": "Crime, Drama",
+    "director": "Martin Scorsese",
+    "description": "Collector’s edition VHS tape of Martin Scorsese’s legendary gangster masterpiece starring Ray Liotta, Robert De Niro, and Joe Pesci.",
+    "image": "vhs/tapes/goodfellas.png",
+    "poster": "vhs/poster/goodfellas.jpg"
+  },
+  {
+    "title": "Taxi Driver VHS Tape",
+    "price": 250,
+    "oldprice": null,
+    "genre": "Drama, Thriller",
+    "director": "Martin Scorsese",
+    "description": "Collector’s edition VHS tape of Martin Scorsese’s gritty psychological drama starring Robert De Niro in his defining role as Travis Bickle.",
+    "image": "vhs/tapes/taxidriver.png",
+    "poster": "vhs/poster/taxidriver.jpg"
+  },
+  {
+    "title": "Oldboy VHS Tape",
+    "price": 230,
+    "oldprice": null,
+    "genre": "Mystery, Action, Thriller",
+    "director": "Park Chan-wook",
+    "description": "Collector’s edition VHS tape of Park Chan-wook’s masterful neo-noir thriller, a cornerstone of South Korean cinema.",
+    "image": "vhs/tapes/oldboy.png",
+    "poster": "vhs/poster/oldboy.jpg"
+  },
+  {
+    "title": "Lady Vengeance VHS Tape",
+    "price": 205,
+    "oldprice": null,
+    "genre": "Crime, Drama, Thriller",
+    "director": "Park Chan-wook",
+    "description": "Collector’s edition VHS tape of Park Chan-wook’s visually stunning and emotionally charged finale to The Vengeance Trilogy.",
+    "image": "vhs/tapes/ladyvengeance.png",
+    "poster": "vhs/poster/ladyvengeance.jpg"
+  },
+  {
+    "title": "Sympathy for Mr. Vengeance VHS Tape",
+    "price": 200,
+    "oldprice": null,
+    "genre": "Crime, Drama, Thriller",
+    "director": "Park Chan-wook",
+    "description": "Collector’s edition VHS tape of Park Chan-wook’s raw and unsettling first installment in The Vengeance Trilogy.",
+    "image": "vhs/tapes/mrvengeance.png",
+    "poster": "vhs/poster/mrvengeance.jpg"
+  },
+  {
+    "title": "Three... Extremes VHS Tape",
+    "price": 180,
+    "oldprice": 200,
+    "genre": "Horror, Thriller",
+    "director": "Park Chan-wook",
+    "description": "Collector’s edition VHS tape of the acclaimed Asian horror anthology featuring chilling works by Park Chan-wook, Takashi Miike, and Fruit Chan.",
+    "image": "vhs/tapes/threeextreme.png",
+    "poster": "vhs/poster/threeextreme.jpg"
+  },
+  {
+    "title": "Joint Security Area VHS Tape",
+    "price": 170,
+    "oldprice": 190,
+    "genre": "Drama, Mystery, Thriller",
+    "director": "Park Chan-wook",
+    "description": "Collector’s edition VHS tape of Park Chan-wook’s gripping military mystery that delves into the fragile tensions along the Korean DMZ.",
+    "image": "vhs/tapes/jointsecurityarea.png",
+    "poster": "vhs/poster/jointsecurityarea.jpg"
+  },
+  {
+    "title": "Blue Velvet VHS Tape",
+    "price": 205,
+    "oldprice": null,
+    "genre": "Mystery, Drama, Thriller",
+    "director": "David Lynch",
+    "description": "Collector’s edition VHS tape of David Lynch’s haunting neo-noir classic starring Kyle MacLachlan, Isabella Rossellini, and Dennis Hopper.",
+    "image": "vhs/tapes/bluevelvet.png",
+    "poster": "vhs/poster/bluevelvet.jpg"
+  },
+  {
+    "title": "Eraserhead VHS Tape",
+    "price": 170,
+    "oldprice": null,
+    "genre": "Horror, Experimental, Drama",
+    "director": "David Lynch",
+    "description": "Collector’s edition VHS tape of David Lynch’s surreal debut feature — a nightmarish journey through industrial decay, isolation, and the subconscious.",
+    "image": "vhs/tapes/eraserhead.png",
+    "poster": "vhs/poster/eraserhead.jpg"
+  },
+  {
+    "title": "Lost Highway VHS Tape",
+    "price": 210,
+    "oldprice": null,
+    "genre": "Mystery, Psychological, Thriller",
+    "director": "David Lynch",
+    "description": "Collector’s edition VHS tape of David Lynch’s hypnotic neo-noir thriller starring Bill Pullman, Patricia Arquette, and Balthazar Getty.",
+    "image": "vhs/tapes/losthighway.png",
+    "poster": "vhs/poster/losthighway.jpg"
+  },
+  {
+    "title": "Mulholland Drive VHS Tape",
+    "price": 185,
+    "oldprice": 200,
+    "genre": "Mystery, Drama, Crime",
+    "director": "David Lynch",
+    "description": "Collector’s edition VHS tape of David Lynch’s mesmerizing neo-noir masterpiece starring Naomi Watts and Laura Harring.",
+    "image": "vhs/tapes/mulhollanddrive.png",
+    "poster": "vhs/poster/mulhollanddrive.jpg"
+  },
+  {
+    "title": "Wild at Heart VHS Tape",
+    "price": 195,
+    "oldprice": null,
+    "genre": "Crime, Drama, Romance",
+    "director": "David Lynch",
+    "description": "Collector’s edition VHS tape of David Lynch’s fiery road romance starring Nicolas Cage and Laura Dern.",
+    "image": "vhs/tapes/wildatheart.png",
+    "poster": "vhs/poster/wildatheart.jpg"
+  },
+  {
+    "title": "Pearl VHS Tape",
+    "price": 210,
+    "oldprice": null,
+    "genre": "Horror, Drama, Thriller",
+    "director": "Ti West",
+    "description": "Collector’s edition VHS tape of Ti West’s acclaimed psychological horror prequel starring Mia Goth in a mesmerizing, career-defining performance.",
+    "image": "vhs/tapes/pearl.png",
+    "poster": "vhs/poster/pearl.jpg"
+  },
+  {
+    "title": "Longlegs VHS Tape",
+    "price": 205,
+    "oldprice": null,
+    "genre": "Horror, Mystery, Thriller",
+    "director": "Osgood Perkins",
+    "description": "Collector’s edition VHS tape of Osgood Perkins’ chilling 2024 horror-thriller starring Maika Monroe and Nicolas Cage.",
+    "image": "vhs/tapes/longlegs.png",
+    "poster": "vhs/poster/longlegs.jpg"
+  },
+  {
+    "title": "Panic Room VHS Tape",
+    "price": 225,
+    "oldprice": null,
+    "genre": "Crime, Drama, Thriller",
+    "director": "David Fincher",
+    "description": "Collector’s edition VHS tape of David Fincher’s tense home-invasion thriller starring Jodie Foster, Kristen Stewart, and Forest Whitaker.",
+    "image": "vhs/tapes/panicroom.png",
+    "poster": "vhs/poster/panicroom.jpg"
+  },
+  {
+    "title": "The Usual Suspects VHS Tape",
+    "price": 215,
+    "oldprice": null,
+    "genre": "Crime, Mystery, Thriller",
+    "director": "Bryan Singer",
+    "description": "Collector’s edition VHS tape of Bryan Singer’s iconic crime mystery starring Kevin Spacey, Gabriel Byrne, and Benicio del Toro.",
+    "image": "vhs/tapes/usualsuspects.png",
+    "poster": "vhs/poster/usualsuspects.jpg"
+  },
+  {
+    "title": "Snatch VHS Tape",
+    "price": 180,
+    "oldprice": null,
+    "genre": "Crime, Comedy, Action",
+    "director": "Guy Ritchie",
+    "description": "Collector’s edition VHS tape of Guy Ritchie’s fast-paced crime comedy starring Jason Statham, Brad Pitt, and Benicio del Toro.",
+    "image": "vhs/tapes/snatch.png",
+    "poster": "vhs/poster/snatch.jpg"
+  }
+]

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="cartstyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+   <div class="main-nav d-flex align-items-center justify-content-between px-4">
+    
+  <div class="logo">
+    <img src="vhs/filmtapes.png" alt="Logo" class="nav-logo">
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav justify-content-end" id="navMenu">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="productpage.html">Product</a></li>
+    <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Cart</a></li>
+    <li class="nav-item"><a class="nav-link" href="contactpage.html">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="aboutpage.html">About Us</a></li>
+  </ul>
+</div>
+
+
+
+ <!-- Cart Progress -->
+  <div class="cart-page">
+    <div class="container text-center text-light my-4">
+      <i class="bi bi-cart-plus" id="cart"> cart</i>
+      <span class="mx-3 text-light">→</span>
+      <i class="bi bi-wallet2" id="payment"> payment</i>
+      <span class="mx-3 text-light">→</span>
+      <i class="bi bi-check2-circle" id="success"> success</i>
+    </div>
+
+    <div class="container mb-5">
+      <h4 class="text-light mb-3">My Cart</h4>
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-lg-8">
+          <div
+            class="cart-item border border-warning rounded-3 p-3 mb-3 d-flex align-items-center"
+            data-price="520"
+          >
+            <img
+              src="https://m.media-amazon.com/images/I/71c05lTE03L._AC_UF894,1000_QL80_.jpg"
+              class="rounded me-3"
+              width="100"
+            />
+            <div class="flex-grow-1">
+              <h5 class="text-light mb-1">Pulp Fiction (1994)</h5>
+              <p class="text-secondary mb-1">$520</p>
+              <p class="text-secondary small">
+                Experience the iconic masterpiece on limited edition
+                collectibles.
+              </p>
+              <div class="d-flex align-items-center">
+                <button class="btn btn-warning btn-sm minus">-</button>
+                <input
+                  type="text"
+                  class="form-control text-center mx-1 qty-input"
+                  value="1"
+                  style="height: 30px; width: 50px"
+                />
+                <button class="btn btn-warning btn-sm plus">+</button>
+              </div>
+            </div>
+            <button class="btn btn-outline-warning btn-sm delete-item">
+              <i class="bi bi-trash"></i> 
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-lg-4">
+          <div class="border border-warning rounded-3 p-4">
+            <h5 class="text-warning mb-3">Order Summary</h5>
+            <div
+              class="d-flex justify-content-between border-bottom border-warning py-2"
+            >
+              <span class="text-light">Items</span>
+              <span class="text-warning" id="item-count">1</span>
+            </div>
+            <div
+              class="d-flex justify-content-between border-bottom border-warning py-2"
+            >
+              <span class="text-light">Subtotal</span>
+              <span class="text-warning" id="subtotal">$520</span>
+            </div>
+            <div
+              class="d-flex justify-content-between border-bottom border-warning py-2"
+            >
+              <span class="text-light">Shipping</span>
+              <span class="text-warning">Free</span>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+              <strong class="text-light">Total</strong>
+              <strong class="text-warning" id="total">$520</strong>
+            </div>
+            <button
+  id="checkoutBtn"
+  class="btn btn-warning w-100 mt-3 fw-normal"
+>
+  CHECKOUT
+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light border border-warning">
+          <div class="modal-header border-warning">
+            <h5 class="modal-title text-warning">Payment Details</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="paymentForm">
+              <!-- Payment Method -->
+              <div class="mb-3">
+                <label for="paymentMethod" class="form-label"
+                  >Select Payment Method</label
+                >
+                <select
+                  class="form-select bg-light text-light border-warning"
+                  id="paymentMethod"
+                  required
+                >
+                  <option value="" selected disabled>select...</option>
+                  <option value="card">Credit / Debit Card</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="gcash">GCash</option>
+                  <option value="cod">Cash on Delivery</option>
+                </select>
+              </div>
+
+              <!-- Credit / Debit Card Fields -->
+              <div id="cardFields" class="payment-section d-none">
+                <div class="mb-3">
+                  <label for="codName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codContact"
+                    class="form-label bg-dark text-light border-warning"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codContact"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codAddress"
+                    class="form-label bg-dark text-light border-warning"
+                    >Delivery Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codAddress"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="cardName"
+                    class="form-label bg-dark text-light border-warning"
+                    >Name on Card</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="cardName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="cardNumber"
+                    class="form-label bg-dark text-light border-warning"
+                    >Card Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="cardNumber"
+                    maxlength="16"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label
+                      for="expiryDate"
+                      class="form-label bg-dark text-light border-warning"
+                      >Expiry Date</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-light border-warning"
+                      id="expiryDate"
+                      placeholder="MM/YY"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label
+                      for="cvv"
+                      class="form-label bg-dark text-light border-warning"
+                      >CVV</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control bg-dark text-light border-warning"
+                      id="cvv"
+                      maxlength="3"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- PayPal Fields -->
+              <div id="paypalFields" class="payment-section d-none">
+                <div class="mb-3">
+                  <label
+                    for="codName"
+                    class="form-label bg-dark text-light border-warning"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codContact"
+                    class="form-label bg-dark text-light border-warning"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codContact"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codAddress"
+                    class="form-label bg-dark text-light border-warning"
+                    >Delivery Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="codAddress"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="paypalEmail"
+                    class="form-label bg-dark text-light border-warning"
+                    >PayPal Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control bg-dark text-light border-warning"
+                    id="paypalEmail"
+                  />
+                </div>
+              </div>
+
+              <!-- GCash Fields -->
+              <div id="gcashFields" class="payment-section d-none">
+                <div class="mb-3">
+                  <label
+                    for="codName"
+                    class="form-label bg-dark text-light border-warning"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="fullname"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codAddress"
+                    class="form-label bg-dark text-light border-warning"
+                    >Delivery Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="address"
+                    placeholder="Enter your delivery address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="contact"
+                    class="form-label bg-dark text-light border-warning"
+                    >GCash Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="contact"
+                    maxlength="11"
+                  />
+                </div>
+              </div>
+
+              <!-- COD Fields -->
+              <div id="codFields" class="payment-section d-none">
+                <div class="mb-3">
+                  <label
+                    for="codName"
+                    class="form-label bg-dark text-light border-warning"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="fullname"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codContact"
+                    class="form-label bg-dark text-light border-warning"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="contact"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="codAddress"
+                    class="form-label bg-dark text-light border-warning"
+                    >Delivery Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-warning"
+                    id="address"
+                  />
+                </div>
+              </div>
+
+              <div class="text-center mt-3">
+                <button type="submit" class="btn btn-warning fw-bold ">
+                  Pay Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Page -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content bg-dark text-light border border-warning text-center"
+        >
+          <div class="modal-header border-warning">
+            <h5 class="modal-title text-warning">Payment Successful</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p class="mb-3">Thank you for your purchase.</p>
+
+            <div
+              class="border border-warning rounded-3 p-3 text-start mx-auto"
+              style="max-width: 400px"
+            >
+              <h6 class="text-warning mb-2">Order Details</h6>
+              <p><strong>Name:</strong> <span id="orderName"></span></p>
+              <p><strong>Contact:</strong> <span id="orderContact"></span></p>
+              <p><strong>Address:</strong> <span id="orderAddress"></span></p>
+              <p>
+                <strong>Payment Method:</strong> <span id="orderPayment"></span>
+              </p>
+              <p>
+                <strong>Total Amount:</strong> <span id="orderTotal"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer justify-content-center border-warning">
+            <button id="returnHome" class="btn btn-warning fw-bold px-4">
+              Return to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer-main d-flex align-items-start justify-content-start flex-wrap">
+    
+    <div class="logo">
+      <img src="vhs/filmtapes.png" class="footer-logo">
+    </div>
+
+    <div class="footer-locations d-flex flex-wrap">
+      <!-- Germany -->
+      <div class="footer-col">
+        <h6 class="footer-title">GERMANY</h6>
+        <p>
+          Hochmeisterkirche<br>
+          Westfälische Straße 96<br>
+          10709 Berlin<br>
+          Berlin, Germany
+        </p>
+      </div>
+
+      <!-- Netherlands -->
+      <div class="footer-col">
+        <h6 class="footer-title">NETHERLANDS</h6>
+        <p>
+          Cornelis Schuytstraat<br>
+          De Lairessestraat 730<br>
+          1071 PK Amsterdam<br>
+          North Holland, Netherlands
+        </p>
+      </div>
+
+      <!-- France -->
+      <div class="footer-col">
+        <h6 class="footer-title">FRANCE</h6>
+        <p>
+          Hôtel Negresco<br>
+          5 Promenade des Anglais<br>
+          06000 Nice<br>
+          Provence-Alpes-Côte d'Azur, France
+        </p>
+      </div>
+
+ <div class="footer-col">
+  <h6 class="footer-title">Follow Us</h6>
+  <p class="social-links">
+    <a href="#"><i class="fab fa-facebook"></i>: filmtapes</a><br>
+    <a href="#"><i class="fab fa-instagram"></i>: @filmtapes</a><br>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i>: @filmtapes</a><br>
+  </p>
+</div>
+
+    </div>
+  </div>
+   <!-- Divider and Copyright -->
+  <hr class="footer-line">
+  <div class="footer-bottom text-center">
+    <p>Copyright © 1994. Vinculado. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+
+<script src="homejs.js"></script>
+    
+</body>
+</html>
